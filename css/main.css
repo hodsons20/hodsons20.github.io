@@ -3,8 +3,10 @@
     --nav-bg: #262626;
     --sc-bg: #2A2A2A;
     --td-bg: #F8F8F8;
+    --font-2: #636363;
     --ancho: 1000px;
     --margins: 0 auto;
+    
 }
 
 *{
@@ -16,6 +18,60 @@ body{
     background: var(--nav-bg);
     color: white;
 }
+
+.menu-button{
+    display: none;
+    color: #d6615b;
+    background: #dcd2d2;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    z-index: 3;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.lateralMenu{
+    /* display: none; */
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(42, 42, 42, 0.9);
+    transition: 1s ease;
+}
+
+.lateralMenu ul{
+    list-style: none;
+    max-height: 100vh;
+}
+
+.lateralMenu ul li{
+    margin-bottom: 5vw;
+}
+
+.lateralMenu ul li a{
+    color: white;
+    font-size: 5vw;
+    text-decoration: none;
+}
+
+.lateralMenu .close-menu-button{
+    margin-left: 70vw;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+    color: var(--pink);
+    font-size: 10vw;
+    cursor: pointer;
+}
+
 
 strong{
     color: var(--pink);
@@ -61,7 +117,6 @@ strong{
 
 .contenedor{
     background: white;
-    
 }
 
 /* .contenido{
@@ -72,6 +127,7 @@ strong{
 
 .features-section{
     background: var(--td-bg);
+    padding: 40px 0;
 }
 
 .features{
@@ -80,12 +136,41 @@ strong{
 }
 
 .feature{
-    color: #636363;
+    color: var(--font-2);
     
 }
 
 .feature img{
     width: 100px;
+}
+
+.sucursales{
+    width: var(--ancho);
+    margin: var(--margins);
+    color: var(--font-2);
+}
+
+.sucursales .btn{
+    background: var(--pink);
+    margin-left: 5px;
+}
+
+.sucursales-buttons{
+    margin: var(--margins);
+}
+
+.photos-container{
+    width: var(--ancho);
+    margin: var(--margins);
+}
+
+.photo{
+    width: 160px;
+}
+
+.photo img{
+    width: 100%;
+    height: auto;
 }
 
 footer{
@@ -118,5 +203,16 @@ footer .copy{
     .feature img{
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (max-width:660px)
+{
+    .navbar-nav{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
     }
 }
