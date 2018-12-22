@@ -248,6 +248,22 @@ footer .copy{
     color: white;
 }
 
+.go-to-top{
+    display: none;
+    color: blue;
+    background: #dcd2d2;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    z-index: 3;
+    bottom: 12px;
+    right: 5px;
+    cursor: pointer;
+}
+
 footer .copy{
     background: var(--nav-bg);
 }
