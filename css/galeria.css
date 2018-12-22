@@ -1,0 +1,38 @@
+:root{
+    --pink: #FF6861;
+    --nav-bg: #262626;
+    --sc-bg: #2A2A2A;
+    --td-bg: #F8F8F8;
+    --font-2: #636363;
+    --ancho_: 1000px;
+    --margins: 0 auto;
+    --facebook: #37589E;
+    --twitter: #52A8E6;
+    --instagram: #D02789;
+    --youtube: #F60000;
+}
+
+.content{
+    width: var(--ancho_);
+    margin: var(--margins);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    gap: 25px;
+    justify-content: center;
+}
+
+/* .imagen{
+    height: 350px;
+} */
+
+.imagen img{
+    width: 300px;
+    height: 320px;
+}
+
+@media screen and (max-width:1100px)
+{
+    :root{
+        --ancho_: 80%;
+    }
+}
