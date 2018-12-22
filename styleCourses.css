@@ -1,0 +1,24 @@
+
+.cont{
+    background: #eaeaea;
+    max-width: 80%;
+    height: auto;
+    margin: 20px 10%;
+    text-align: center;
+    padding: 10px 20px;
+    bord
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section img{
+   width: 300px;
+   height: 300px;
+}
+
+/*
+  
+*/
