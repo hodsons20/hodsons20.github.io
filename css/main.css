@@ -6,7 +6,10 @@
     --font-2: #636363;
     --ancho: 1000px;
     --margins: 0 auto;
-    
+    --facebook: #37589E;
+    --twitter: #52A8E6;
+    --instagram: #D02789;
+    --youtube: #F60000;
 }
 
 *{
@@ -15,7 +18,7 @@
 }
 
 body{
-    background: var(--nav-bg);
+    background: white;
     color: white;
 }
 
@@ -44,7 +47,7 @@ body{
     width: 100vw;
     bottom: 0;
     z-index: 99;
-    background: rgba(42, 42, 42, 0.9);
+    background: rgba(36, 35, 35, 0.9);
     transition: 1s ease;
 }
 
@@ -78,9 +81,14 @@ strong{
     font-size: 24px;
 }
 
+.navbar-cont{
+    background: var(--nav-bg);
+}
+
 .navbar{
     margin: var(--margins);
     width: var(--ancho);
+    background: inherit;
 }
 
 .navbar .navbar-nav{
@@ -144,6 +152,10 @@ strong{
     width: 100px;
 }
 
+section{
+    margin: 20px 0;
+}
+
 .sucursales{
     width: var(--ancho);
     margin: var(--margins);
@@ -175,11 +187,61 @@ strong{
 
 footer{
     background: var(--sc-bg);
+    margin-top: 10px;
+    /* padding-top: 25px; */
+}
+
+footer i{
+    color: var(--pink);
 }
 
 .footer-cont, footer .copy{
     width: var(--ancho);
     margin: var(--margins);
+    
+}
+
+footer .copy{
+    padding: 10px 0;
+}
+
+.footer-cont{
+    margin: 25px auto;
+    padding-top: 28px;
+}
+
+.social-link{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.social-link.facebook{
+    background: var(--facebook);
+}
+
+.social-link.twitter{
+    background: var(--twitter);
+}
+
+.social-link.youtube{
+    background: var(--youtube);
+}
+
+.social-link.instagram{
+    background: var(--instagram);
+}
+
+.social-link.pinterest{
+    background: var(--youtube);
+}
+
+.social-link i{
+    color: white;
 }
 
 footer .copy{
