@@ -148,6 +148,10 @@ strong{
     
 }
 
+.feature{
+    width: 25%;
+}
+
 .feature img{
     width: 100px;
 }
@@ -276,5 +280,10 @@ footer .copy{
 
     .menu-button{
         display: block;
+    }
+
+    .feature{
+        width: 100%;
+        margin: initial;
     }
 }

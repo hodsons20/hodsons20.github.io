@@ -1,43 +1,59 @@
-<!DOCTYPE HTML>
-<Html>
+<!DOCTYPE html>
+<html lang="es">
     
 <head>
-    <meta charset="utf-8">
-    
-
-    <title>Academa de Baile</title>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="icono.jpg">
+    <title>Acandemía de baile - Cursos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="styleCourses.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cursos-style.css" />
+    <script src="script/main.js"></script>
 </head>
-
 
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Academia de baile</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="Index.html">Inicio <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="Cursos.html">Cursos</a>
-      <a class="nav-item nav-link" href="Nosotros.html">Nosotros</a>
-      <a class="nav-item nav-link" href="Galeria.html">Galería</a>
-    </div>
-  </div>
+        <i class="fas fa-bars menu-button" onclick="showMenu()"></i>
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-  </form>
-</nav>
+        <div id="menu" class="lateralMenu text-center">
+            <i class="fas fa-times close-menu-button" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Galería</a></li>
+            </ul>
+        </div>
+        <div class="navbar-cont">
+    
+            <div class="navbar">
+                <a href="index.html" class="navbar-brand text-white"><strong>D</strong>anza</a>
+        
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="Cursos.html" class="nav-link">Cursos</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Nosotros</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Galería</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
 
-<div class="cont">
-    <h4 class="title">cursos festival de jeres</h4>
+<!-- <div class="cont">
+    <h4 class="title">Curso festival de Jeres</h4>
     <section>
 
         
@@ -58,12 +74,89 @@
         <img src="descarga (7).jpg" >
         <img src="descarga (8).jpg" >
     </section>
-</div>
+</div> -->
+
+  <div class="content">
+      <div class="course-section">
+          <div class="course d-lg-flex align-items-center text-center">
+              <figure class="course-image">
+                  <img src="noticias-nacionales_festival-jerez-cursos.jpg" alt="">
+              </figure>
+              <div class="course-info text-center">
+                  <h4 class="course-title">Curso festival de Jeres</h4>
+                  <p class="course-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo eius, 
+                      porro tempore quos modi impedit vitae sunt fugit dolore.
+                  </p>
+                  <button type="button" class="btn">Incribirse</button>
+              </div>
+          </div>
+      </div>
+
+      <hr>
+      
+      <div class="course-section">
+            <div class="course d-lg-flex align-items-center justify-content-center">
+                <figure class="course-image">
+                    <img src="descarga (2).jpg" alt="">
+                </figure>
+                <div class="course-info text-center">
+                    <h4 class="course-title">Curso de Semana Santa</h4>
+                    <p class="course-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo eius, 
+                        porro tempore quos modi impedit vitae sunt fugit dolore.
+                    </p>
+                    <button type="button" class="btn">Incribirse</button>
+                </div>
+            </div>
+        </div>
+      
+
+      <hr>
+
+      <div class="course-section">
+            <div class="course d-lg-flex align-items-center justify-content-center">
+                <figure class="course-image">
+                    <img src="descarga (7).jpg" alt="">
+                </figure>
+                <div class="course-info text-center">
+                    <h4 class="course-title">Cursos de Sevillanas Feria de Caballo</h4>
+                    <p class="course-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quo eius, 
+                        porro tempore quos modi impedit vitae sunt fugit dolore.
+                    </p>
+                    <button type="button" class="btn">Incribirse</button>
+                </div>
+            </div>
+    </div>
+  
+        
+  </div>
+
+   <footer>
+        <div class="footer-cont text-center">
+            <h4>No se lo pierda</h4>
+            <p><i class="fas fa-map-marker"></i> <span></span> 10 KM Carretera a Masaya</p>
+            <p><i class="fas fa-envelope"></i> <span></span> consultas@acadedanza.com</p> <span></span> <p><i class="fas fa-phone-volume"></i> <span></span>22345678</p>
+            <div class="social d-flex justify-content-center">
+                <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link pinterest"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        <div class="copy text-center">
+            <p>&copy; Jose Luis Hodsons, 2018</p>
+        </div>
+    </footer>
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 </body>
+
+</html>
                    
                    
